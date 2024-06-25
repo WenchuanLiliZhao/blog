@@ -8,6 +8,16 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>      
+    <script type="module" src="/src/main.tsx"></script>   
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+          tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+      });
+    </script>    
+    <script type="text/javascript" src="MathJax.js"></script>
+    <script type="text/javascript" src="latest.js"></script>
   </body>
 </html>
