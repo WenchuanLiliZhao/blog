@@ -1,4 +1,4 @@
-import Blog_0001 from "../../Public/BlogContents/Blog_0001/0_Repo";
+import Blogs from "../../Public/BlogContents/Blogs";
 import RootPageLayout from "../RootPageLayout";
 
 export default function Content() {
@@ -7,7 +7,7 @@ export default function Content() {
 
       This is Home
 
-      {Blog_0001.content.zh}
+      {Blogs.Blog_0001.content}
 
     </RootPageLayout>
   </>)

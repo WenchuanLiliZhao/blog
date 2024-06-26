@@ -1,0 +1,106 @@
+
+// ================================
+// Part 1: typeface
+// ================================
+
+:root {
+  --font-sans: Inter, -apple-system,BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: SF mono, ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+html {
+  font-family: var(--font-sans);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-family--sans {
+  font-family: var(--font-sans);
+}
+
+.font-family--serif {
+  font-family: var(--font-serif);
+}
+
+.font-family--mono {
+  font-family: var(--font-mono);
+}
+
+
+
+// ================================
+// Part 2: font sizes
+// ================================
+
+// base font size
+:root {
+  --font-size: 20px;
+
+  @media only screen and (max-width: 1200px) {
+    --font-size: 18px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    --font-size: 16px;
+  }
+}
+
+// base line height
+:root {
+  &, .sys {
+    --line-height--title: 1.25;
+    --line-height--p: 1.5;
+  }
+
+  .art, article {
+    --line-height--title: 1.5;
+    --line-height--p: 1.75;
+  }
+}
+
+html, body {
+  font-size: var(--font-size);
+}
+
+h1, .h1 {
+  font-size: 1.9em;
+  line-height: var(--line-height--title);
+}
+
+h2, h2 {
+  font-size: 1.25em;
+  line-height: var(--line-height--title);
+}
+
+p, li, .p {
+  font-size: 1em;
+  line-height: var(--line-height--p);
+}
+
+figcaption, caption, .caption {
+  font-size: 0.9em;
+  line-height: var(--line-height--p);
+
+  & p, li {
+    font-size: 0.9em;
+  }
+}
+
+sub, sup, small, .small {
+  font-size: 0.75em;
+  line-height: var(--line-height--p);
+}
+
+
+// ================================
+// Part 2: font weight
+// ================================
+h1, .h1 {
+  font-weight: bold;
+}
+
+h2, h2 {
+  font-weight: bold;
+}
