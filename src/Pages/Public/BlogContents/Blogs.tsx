@@ -1,8 +1,9 @@
-import Blog_0001 from "./Blog_1/0_Repo"
+import Blog_0 from "./Blog_0/0_Repo"
+
 
 
 const Blogs = {
-  Blog_0001,
+  Blog_0,
 }
 
 export default Blogs

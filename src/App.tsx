@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import 'katex/dist/katex.min.css';
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Pages from './Pages/Pages';

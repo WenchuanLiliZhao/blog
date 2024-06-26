@@ -1,6 +1,6 @@
 const Info = {
-  title: "test",
-  key: "testblog",
+  title: "Test",
+  key: "test-blog",
 }
 
 export default Info
